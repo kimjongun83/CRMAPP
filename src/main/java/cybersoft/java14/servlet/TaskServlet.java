@@ -1,4 +1,4 @@
-package cybersoft.javabackend.java14.crm.servlet;
+package cybersoft.java14.servlet;
 
 import java.io.IOException;
 
@@ -8,11 +8,15 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(name = "homeServlet", urlPatterns = "/home")
-public class HomeServlet extends HttpServlet {
+import cybersoft.java14.utils.JspConst;
+import cybersoft.java14.utils.UrlConst;
+
+@WebServlet(name = "taskServlet", urlPatterns = {
+		UrlConst.TASK
+})
+public class TaskServlet extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		req.getRequestDispatcher("/WEB-INF/views/home.jsp")
-			.forward(req, resp);
+		req.getRequestDispatcher(JspConst.TASK).forward(req, resp);
 	}
 }

@@ -3,9 +3,10 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <!-- Header -->
+
 <div id="header" class="mdk-header bg-light js-mdk-header m-0" data-fixed data-effects="waterfall">
     <div class="mdk-header__content">
-        <div class="navbar navbar-expand-sm navbar-main navbar-light bg-light pr-0" id="navbar" data-primary>
+        <div class="navbar navbar-expand-sm navbar-main navbar-light bg-white pr-0" id="navbar" data-primary>
             <div class="container">
                 <!-- Navbar toggler -->
 
@@ -14,8 +15,8 @@
                 </button>
 
                 <!-- Navbar Brand -->
-                <a href="dashboard.html" class="navbar-brand">
-                    <img class="navbar-brand-icon" src="assets/images/logo.png" height="50" alt="Cybersoft" />
+                <a href="<%= request.getContextPath() %>/home" class="navbar-brand">
+                    <img class="navbar-brand-icon" src='<c:url value="/assets/images/logo.png" />' height="50" alt="Cybersoft" />
                 </a>
 
                 <span class="mr-3"></span>

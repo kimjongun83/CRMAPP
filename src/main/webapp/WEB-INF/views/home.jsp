@@ -6,7 +6,6 @@
 <meta charset="UTF-8">
 <title>Homepage</title>
 </head>
-
 <body>
 	<div class="container page__heading-container">
 	    <div class="page__heading">
